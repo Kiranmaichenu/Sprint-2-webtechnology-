@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper Stop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ShopperstopWebpage.css">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script src="./Shopperstop.js"></script>
+<!--<script src="./product.js"></script>
+<script src="./Ajaxproduct.js"></script>-->
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS bundle (popper.js included) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeNotificationBtn">&times;</span>
+            <p id="notificationMessage"></p>
+        </div>
+    </div>
+    
+    <header>
+        <img src="http://tinyurl.com/4pvjz773" height="100px" width="100px">
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#">First Citizen Club</a>
+            <a href="#">All Stores</a>
+            <a href="#">Help & Support</a>
+        </nav>
+
+        <ul class="row-menu">
+          <li> <a href="#">CATEGORIES</a></li> 
+          <li>  <a href="#">LUXE</a></li> 
+          <li>  <a href="#">BARGAIN</a></li> 
+          <li> <a href="#">STYLE HUB</a></li> 
+        </ul>
+
+        <div class="Home"> 
+        <div class="Search-container">
+            <input type="text"  placeholder="Search Products & Brands">
+                <button type="submit"><i class="fas fa-search"></i> </button> 
+        </div>
+
+        <i class="fas fa-home"></i>
+        <i class="fas fa-shopping-bag"></i>
+        <i class="fas fa-heart"></i>
+           
+        <button>
+            <a href="./ShopperstopLogin.html">  
+            <i class="fas fa-user"></i>
+            </a>
+        </button>
+
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="./Shopperstopmen.html">Men</a>
+        <a href="./Shopperstopwomen.html">Women</a>
+        <a href="./Shopperstopbeauty.html">BEAUTY</a>
+        <a href="./Shopperstopwatches.html">WATCHES</a>
+        <a href="./Shopperstopkids.html">KIDS</a>
+        <a href="./Shopperstophomestop.html">HOMESTOP</a>
+        <a href="./Shopperstopgifts.html">GIFTS</a>
+        <a href="./Brandlabel.html">BRANDS</a>
+    </nav>
+
+    <div class="Offer-container">
+        <img src="http://tinyurl.com/2fv9whbm" height="150px" width="1500px">
+    </div>
+    <main>
+
+        <section class="banner">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.6435-9/29511875_10155913151318141_2259799916123521024_n.png?stp=dst-png_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=FpNktRVNh-gAX8eU9sE&_nc_ht=scontent-bom1-2.xx&oh=00_AfDQGbkTV5lBIowNN-632qJDCt4Cql4MVUNyrweWce_8rg&oe=65D03B7B" height="400px" width="700px">
+            <img src=" https://scontent-bom2-1.xx.fbcdn.net/v/t39.30808-6/312474481_10159879561388141_5010719959527079341_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=783fdb&_nc_ohc=fGYeGrBn1d4AX8D8oXU&_nc_ht=scontent-bom2-1.xx&oh=00_AfB0sypWMHvPaG6B5Jybxp7JyiW5xQj9ietw57mW2BFv9Q&oe=65ACEC1A"height="400px" width="700px">
+            <img src="https://scontent-bom1-1.xx.fbcdn.net/v/t39.30808-6/267187855_10159290857513141_6175774097457441876_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=SS1sR3zJfvQAX9ouZVa&_nc_ht=scontent-bom1-1.xx&oh=00_AfAlNG4YE7w9WFEb93b3fSdRnPb5QA8jSF9xl4BMJBbK0g&oe=65ADC050"  height="400px" width="700px">
+            <img src=" https://scontent-bom1-1.xx.fbcdn.net/v/t39.30808-6/302177564_10159764046403141_3931263657679930027_n.png?_nc_cat=102&ccb=1-7&_nc_sid=783fdb&_nc_ohc=eZl8Py6zYAoAX-RWjw2&_nc_ht=scontent-bom1-1.xx&oh=00_AfCzEbC48HjQN7NUhsRug9bp_9v41FlrPqJR1RYqSEOiAQ&oe=65ADF095"height="400px" width="700px">
+            <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.6435-9/29178007_10155889228153141_1687665123600105472_n.jpg?stp=dst-jpg_p843x403&_nc_cat=107&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=vI1yLxhUorIAX8-MGyg&_nc_ht=scontent-bom1-2.xx&oh=00_AfDRixSXVPgWhTe7XLSZHRq-rnRA-JAlthWE-ZYM5x_grg&oe=65D04722" height="400px" width="700px">
+            <img src="https://scontent-bom2-2.xx.fbcdn.net/v/t39.30808-6/280998785_10159561036513141_6939787592716703663_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=783fdb&_nc_ohc=W-C-FtDw_SQAX9NxVj2&_nc_ht=scontent-bom2-2.xx&oh=00_AfCcv8XMFmHTuDvQ0r2X5hxm7tjb72mYwqTY3Fn7GglUrA&oe=65AD4782"height="400px" width="700px">
+            <img src=" https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/391746241_712972384193169_4192404856615847834_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=tq37a4ooE08AX9nQAUN&_nc_ht=scontent-bom1-2.xx&oh=00_AfAyqgpfdUz2CUBYz5AkoBxeF82-koRTmkOFka1P-k3YAg&oe=65ADA667" height="400px" width="700px">
+            
+            <img src="https://scontent-bom2-1.xx.fbcdn.net/v/t39.30808-6/270012693_10159334573113141_6373221992721299988_n.jpg?stp=cp0_dst-jpg_e15_q65_s403x403&_nc_cat=101&ccb=1-7&_nc_sid=ab7367&_nc_ohc=s5xrqpib_60AX-Alz1a&_nc_ht=scontent-bom2-1.xx&oh=00_AfADG4v81HoZnFzmwwyu-k5AVsSl7pY6Fb6zBG_XOCxn4g&oe=65AE6F81" height="400px" width="700px">
+            <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/271140202_10159334573968141_2794543625277626686_n.jpg?stp=cp0_dst-jpg_e15_p403x403_q65&_nc_cat=108&ccb=1-7&_nc_sid=ab7367&_nc_ohc=MFvj1Ymm5vEAX-NflOH&_nc_ht=scontent-bom1-2.xx&oh=00_AfAIcyUzH8BfvXuMFP_jhV9eZ6_PEqloddbPvfNerJmp3w&oe=65AEACAF" height="400px" width="700px">
+            <img src="https://scontent-bom2-2.xx.fbcdn.net/v/t1.6435-9/55606179_10157188474374808_1875344010340466688_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=KCe1fUQ07kMAX8JUs9v&_nc_ht=scontent-bom2-2.xx&oh=00_AfBRrLuhIFthp1yF7vKwd7SogSa5OxoySIJO1rqNJWfWsQ&oe=65D0392F" height="400px" width="700px">
+            <img src=" https://scontent-bom2-2.xx.fbcdn.net/v/t39.30808-6/268786464_10159298306593141_6597001867199020774_n.jpg?stp=dst-jpg_p843x403&_nc_cat=110&ccb=1-7&_nc_sid=3635dc&_nc_ohc=kAM_fLG7WegAX9KRosi&_nc_ht=scontent-bom2-2.xx&oh=00_AfAcmEgCDHgZ1jF1JnfZN2h4sQyLkvTF4WwrYVBd3jL0ag&oe=65ADC437" height="400px" width="700px">
+            
+            <img src="https://scontent-bom1-1.xx.fbcdn.net/v/t39.30808-6/272086066_10159374155953141_4145535988948110085_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=783fdb&_nc_ohc=xzLTV_VPMdIAX_gZUN3&_nc_ht=scontent-bom1-1.xx&oh=00_AfD7n-Ax7b9SZj45UCtD5NWfmruojiasrWIvTnX4epTAsA&oe=65AEC121"height="400px" width="700px">
+            <img src="https://scontent-bom2-1.xx.fbcdn.net/v/t39.30808-6/267130008_10159296380938141_8209560254080026681_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=RlKv9EerD4AAX_sh7XJ&_nc_ht=scontent-bom2-1.xx&oh=00_AfBgynapbnUbJP79XncYK3QjgipLrjw0NEkbBXtieNW_uQ&oe=65AEBB46"height="400px" width="700px">
+            <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/277251942_10159472926103141_199863180621301908_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=783fdb&_nc_ohc=4C4ujOkkG-YAX9ks6Ak&_nc_ht=scontent-bom1-2.xx&oh=00_AfANOPZ0fhFt0N_WnOzvMJ4XpZ7IfNP2V3XLlw15SbnnMA&oe=65AE9648"height="400px" width="700px">
+            <img src="http://tinyurl.com/3rnz57vw" height="400px" width="700px">
+         <img src="http://tinyurl.com/2hymd5x5" height="400px" width="700px">
+         <img src="http://tinyurl.com/34vtwf3t" height="400px" width="700px">
+         <img src="http://tinyurl.com/c5kuzwpu" height="400px" width="700px">
+         <img src="http://tinyurl.com/4zscx4hc" height="400px" width="700px">
+         <img src="http://tinyurl.com/34m5xdbx" height="400px" width="700px">
+         <img src="http://tinyurl.com/m67nh25w" height="400px" width="700px">
+         <img src="http://tinyurl.com/mr2cw5zz" height="400px" width="700px">
+         <img src="http://tinyurl.com/yckkrky5" height="400px" width="700px">
+         <img src="http://tinyurl.com/3efabhe8" height="400px" width="700px">
+         <img src="http://tinyurl.com/3ts4d4er" height="400px" width="700px">
+         <img src="http://tinyurl.com/mv6hsbcx" height="400px" width="700px">
+         <img src="http://tinyurl.com/4xtdm62r" height="400px" width="700px">
+         <img src="http://tinyurl.com/y8tawxnk" height="400px" width="700px">
+         <img src="http://tinyurl.com/2k7mfss8" height="400px" width="700px">
+         <img src="http://tinyurl.com/ywhkycdr" height="400px" width="700px">
+         <img src="http://tinyurl.com/2s4d2wmk" height="400px" width="700px">
+         <img src="http://tinyurl.com/mr38z93p" height="400px" width="700px">
+         <img src="http://tinyurl.com/38jzy25h" height="400px" width="700px">
+         <img src="http://tinyurl.com/mr2pcuvh" height="400px" width="700px">
+         <img src="http://tinyurl.com/d5wb4yj9" height="400px" width="700px">
+         <img src="http://tinyurl.com/yc3u8mpd" height="400px" width="700px">
+         <img src="http://tinyurl.com/bc7jvb6p" height="400px" width="700px">
+         <img src="http://tinyurl.com/3tdjhcby" height="400px" width="700px">
+       
+        </marquee>
+    </section>
+     <!-- Add an empty container for products -->
+
+    <section id="products-container"></section>
+
+</main>
+        <div class="categories">
+            <h1>Featured Images</h1><br>
+                <div class="images-container-row">
+                        <h2 style="font-size:20px;">Watches</h2>
+                        <img src="http://tinyurl.com/37xk2rdn" height="300px" width="250px">
+                        <div class="discount-section">
+                            <h7>Special Offer!</h7>
+                            <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                            <a href="#" class="shop-now-btn">Shop Now</a>
+                        </div>
+                
+                    <h3 style="font-size:20px;">Home Appliances</h3>
+                    <img src="http://tinyurl.com/yvr64tnk"  height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+                
+                    <h4 style="font-size:20px;"> Men Clothing</h4>
+                    <img src="https://fieldingandnicholson.com/wp-content/uploads/2021/06/1.jpeg"  height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+        </div>
+
+                <div class="images-container-row">
+                    <h5 style="font-size:20px;">Footwear</h5>
+                    <img src="http://tinyurl.com/mtsnu8w5" height="300px" width="250px" >
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+            
+            
+                    <h6 style="font-size:20px;">Cosmetics</h6>
+                    <img src="http://tinyurl.com/3a2djsfh" height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+
+                    
+                    <h6 style="font-size:20px;">Handbags</h6>
+                    <img src="http://tinyurl.com/2uywr4e2" height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+                    
+                </div>
+
+                <div class="images-container-row">
+                    <h6 style="font-size:20px;">Women Clothing</h6>
+                    <img src="https://sslimages.shoppersstop.com/sys-master/images/h6e/he8/28971470356510/14085GREY_GREY.jpg_2000Wx3000H" height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+
+                    <h6 style="font-size:20px;">kids Clothing</h6>
+                    <img src="http://tinyurl.com/jvtpa5zz" height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+
+                    <h6 style="font-size:20px;">Gifts</h6>
+                    <img src="http://tinyurl.com/46ddzxbj" height="300px" width="250px">
+                    <div class="discount-section">
+                        <h7>Special Offer!</h7>
+                        <p>Get <span class="discount-percentage">50-80%</span> off - Shop now!</p>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    
+    <div id="mycarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"> <!-- Set the interval to 2000 milliseconds (2 seconds) -->
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
+    
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://sslimages.shoppersstop.com/sys-master/root/h53/h4d/31590747013150/static_msite_Eoss-23.jpg" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://sslimages.shoppersstop.com/sys-master/root/h43/h78/31745849032734/top-banner-msite_06120223.jpg" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://sslimages.shoppersstop.com/sys-master/root/h8e/h5a/31746695921694/WeddingGifting_msite_Eoss-23.jpg" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://sslimages.shoppersstop.com/sys-master/root/hc1/h27/30357403861022/Main-Banner-Web--2023-07-08-new-fc-page-hdfc.jpg" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent-bom1-1.xx.fbcdn.net/v/t31.18172-8/13482965_1147763618579317_6034986781511651348_o.png?_nc_cat=102&ccb=1-7&_nc_sid=c2f564&_nc_ohc=8QZwgLm9QuEAX_lSmYZ&_nc_ht=scontent-bom1-1.xx&oh=00_AfChSYhCaQCW466D4uvg4fO2_JNOnYfPUJwBGr-wSwOHHQ&oe=65D98BFA" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.18169-9/13394035_1043332969055470_787174984387132783_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c2f564&_nc_ohc=iSgMnbRa9b4AX82rith&_nc_ht=scontent-bom1-2.xx&oh=00_AfCUgZlxaduzV4nh3zTVvQIT4CoLZ7han5xQWNm2S4Ajqw&oe=65D9935D" style="width: 100%; height: 300px;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/320738337_1505640303245979_6219705889535481808_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=FqvhSihzLX8AX8W39UM&_nc_ht=scontent-bom1-2.xx&oh=00_AfDUX6Bd_hkB5r6RE_hLoV5Edmn6l9A1KZ-IMXBIVpAXUQ&oe=65B72F1E" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent-bom2-1.xx.fbcdn.net/v/t39.30808-6/297563901_5638975096136665_200004222660214394_n.png?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=-1EDTnEemFMAX-cSFZx&_nc_ht=scontent-bom2-1.xx&oh=00_AfDbOwYZfPk0BIvMJvj6Tx7p8XiaJ7NNi0bgkSrmdjXinQ&oe=65B62EDE" style="width: 100%; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                    <img src="https://sslimages.shoppersstop.com/sys-master/root/hb3/h6e/14450318344222/featured-image_Meaningful-Milestone-Birthday-Gift-Ideas.jpg" style="width: 100%; height: 300px;">
+                </div>
+            </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+      <script>
+        $(document).ready(function () {
+            $('#mycarousel').carousel();
+        });
+
+    </script>
+      
+    <footer>
+            <div class="follow-us">Follow Us On:</div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/YourInstagramUsername" target="_blank" title="Instagram" class="instagram-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/YourFacebookPage" target="_blank" title="Facebook" class="facebook-icon">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/YourTwitterUsername" target="_blank" title="Twitter" class="twitter-icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+    
+        <p>&copy;2024 Shopperstop Webpage. All rights reserved.</p>
+        <p>Contact: info@Shopperstop.com</p>
+    </footer>
+
+</body>
+</html>
